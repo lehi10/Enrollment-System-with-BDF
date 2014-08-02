@@ -70,9 +70,6 @@ void MainWindow::on_pushButton_login_clicked()
 
     }
 
-
-
-
 }
 
 

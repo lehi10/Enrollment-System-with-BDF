@@ -2,6 +2,7 @@
 #define DIRECTOR_WINDOW_H
 
 #include <QMainWindow>
+#include"data_base.h"
 
 namespace Ui {
 class director_window;
@@ -15,8 +16,17 @@ public:
     explicit director_window(QWidget *parent = 0);
     ~director_window();
 
+private slots:
+
+    void on_cargar_informacion_alumnos_clicked();
+
+    void on_cargar_informacion_profesores_clicked();
+
+    void on_cargar_informacion_administrativos_clicked();
+
 private:
     Ui::director_window *ui;
+    data_base *DB_DIR;
 };
 
 #endif // DIRECTOR_WINDOW_H

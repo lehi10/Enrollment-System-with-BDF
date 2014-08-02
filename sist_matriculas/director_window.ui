@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -35,7 +35,7 @@
      <attribute name="title">
       <string>ADMINISTRATIVOS</string>
      </attribute>
-     <widget class="QTableWidget" name="tableWidget">
+     <widget class="QTableWidget" name="tabla_administrativos">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -70,12 +70,25 @@
        </property>
       </column>
      </widget>
+     <widget class="QPushButton" name="cargar_informacion_administrativos">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>211</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CARGAR INFORMACIÓN</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
       <string>PROFESORES</string>
      </attribute>
-     <widget class="QTableWidget" name="tableWidget_2">
+     <widget class="QTableWidget" name="tabla_profesores">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -115,12 +128,25 @@
        </property>
       </column>
      </widget>
+     <widget class="QPushButton" name="cargar_informacion_profesores">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>211</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CARGAR INFORMACIÓN</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
       <string>ALUMNOS</string>
      </attribute>
-     <widget class="QTableWidget" name="tableWidget_3">
+     <widget class="QTableWidget" name="tabla_alumnos">
       <property name="geometry">
        <rect>
         <x>40</x>
@@ -149,6 +175,19 @@
         <string>CARRERA</string>
        </property>
       </column>
+     </widget>
+     <widget class="QPushButton" name="cargar_informacion_alumnos">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>10</y>
+        <width>211</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CARGAR INFORMACIÓN</string>
+      </property>
      </widget>
     </widget>
    </widget>

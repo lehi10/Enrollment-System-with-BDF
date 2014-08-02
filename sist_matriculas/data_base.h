@@ -7,13 +7,14 @@ typedef DBF dataB;
 
 class data_base
 {
-private:
+public:
     dataB alumnos;
     dataB profesores;
     dataB directores;
     dataB matriculas;
     dataB notas;
-public:
+    dataB administrativos;
+
     data_base();
 };
 
