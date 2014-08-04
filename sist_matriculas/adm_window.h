@@ -21,9 +21,20 @@ private slots:
 
     void on_cargar_alumnos_clicked();
 
+    void on_boton_agregar_alumno_clicked();
+
+
+
+    void on_boton_buscar_calificaciones_alumno_clicked();
+
+    void on_boton_buscar_clicked();
+
+    void on_boton_ingresar_nota_clicked();
+
 private:
     Ui::adm_window *ui;
     data_base *DB;
+
 
 };
 

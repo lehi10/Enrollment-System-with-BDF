@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1353</width>
-    <height>720</height>
+    <height>681</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,11 +20,11 @@
       <x>40</x>
       <y>50</y>
       <width>1291</width>
-      <height>641</height>
+      <height>601</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -40,10 +40,25 @@
        <rect>
         <x>40</x>
         <y>40</y>
-        <width>661</width>
-        <height>381</height>
+        <width>821</width>
+        <height>511</height>
        </rect>
       </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
       <column>
        <property name="text">
         <string>ID</string>
@@ -66,7 +81,27 @@
       </column>
       <column>
        <property name="text">
+        <string>DNI</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>F. NACIMIENTO</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DIRECCIÓN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
         <string>TELF</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EMAIL</string>
        </property>
       </column>
      </widget>
@@ -83,51 +118,211 @@
        <string>CARGAR INFORMACIÓN</string>
       </property>
      </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>100</y>
+        <width>221</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLineEdit" name="input_adm_id"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_nombre_adm"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_apellidos"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_cargo"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_dni"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="input_adm_fecha_nac"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_direccion"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_telf"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_adm_email"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>100</y>
+        <width>131</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_7">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>NOMBRES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_20">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>APELLIDOS</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_21">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>CARGO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_22">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DNI</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_23">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>FECHA DE NACIMIENTO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_24">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DIRECCION</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_25">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TELEFONO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_19">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>EMAIL</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="agregar_adm">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>500</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>50</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>AGREGAR ADMINISTRATIVO</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
       <string>PROFESORES</string>
      </attribute>
-     <widget class="QTableWidget" name="tabla_profesores">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>661</width>
-        <height>381</height>
-       </rect>
-      </property>
-      <column>
-       <property name="text">
-        <string>ID</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>NOMBRES</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>APELLIDOS</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>PROFESION</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string>GRADO PROFESIONAL</string>
-       </property>
-      </column>
-      <column>
-       <property name="text">
-        <string/>
-       </property>
-      </column>
-     </widget>
      <widget class="QPushButton" name="cargar_informacion_profesores">
       <property name="geometry">
        <rect>
@@ -141,20 +336,30 @@
        <string>CARGAR INFORMACIÓN</string>
       </property>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>ALUMNOS</string>
-     </attribute>
-     <widget class="QTableWidget" name="tabla_alumnos">
+     <widget class="QTableWidget" name="tabla_profesores">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>661</width>
-        <height>381</height>
+        <x>30</x>
+        <y>60</y>
+        <width>1121</width>
+        <height>291</height>
        </rect>
       </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
       <column>
        <property name="text">
         <string>ID</string>
@@ -172,10 +377,369 @@
       </column>
       <column>
        <property name="text">
-        <string>CARRERA</string>
+        <string>ESCUELA</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>PROFESION</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>GRADO PROF.</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DNI</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>F. NACIMIENTO</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DIRECCIÓN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TELF</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EMAIL</string>
        </property>
       </column>
      </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>AGREGAR PROFESOR</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>390</y>
+        <width>191</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLineEdit" name="input_prof_id"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_nombre"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_apellidos"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_escuela"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>390</y>
+        <width>131</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>NOMBRES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_26">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>APELLIDOS</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_27">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ESCUELA</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>390</y>
+        <width>201</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="input_prof_email"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_telf"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_direccion"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>390</y>
+        <width>201</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="input_prof_profes"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_grado_p"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_prof_dni"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="input_prof_fecha"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>390</y>
+        <width>111</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_34">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>PROFESIÓN</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_33">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>GRADO PROF.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_28">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DNI</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_29">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>F. DE NACIMIENTO</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>390</y>
+        <width>91</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="label_32">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>EMAIL</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_31">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TELEFONO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_30">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DIRECCION</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="agregar_profesor">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>450</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>AGREGAR PROFESOR</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>380</y>
+        <width>20</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>380</y>
+        <width>20</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>390</y>
+        <width>20</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>ALUMNOS</string>
+     </attribute>
      <widget class="QPushButton" name="cargar_informacion_alumnos">
       <property name="geometry">
        <rect>
@@ -187,6 +751,276 @@
       </property>
       <property name="text">
        <string>CARGAR INFORMACIÓN</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tabla_alumnos">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>50</y>
+        <width>821</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>NOMBRES</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>APELLIDOS</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ESCUELA</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DNI</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>F. NACIMIENTO</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>DIRECCIÓN</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>TELF</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EMAIL</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>890</x>
+        <y>50</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>AGREGAR ALUMNO</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_9">
+      <property name="geometry">
+       <rect>
+        <x>1020</x>
+        <y>100</y>
+        <width>221</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLineEdit" name="input_alumno_id"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_nombre"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_apellidos"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_escuela"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_dni"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="input_alumno_fecha_nac"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_direccion"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_telf"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="input_alumno_email"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_10">
+      <property name="geometry">
+       <rect>
+        <x>880</x>
+        <y>100</y>
+        <width>131</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_11">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>NOMBRES</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_35">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>APELLIDOS</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_36">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>ESCUELA</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_37">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DNI</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_38">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>FECHA DE NACIMIENTO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_39">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>DIRECCION</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_40">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>TELEFONO</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_41">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>EMAIL</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="boton_agregar_alumno">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>510</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Agregar Alumno</string>
       </property>
      </widget>
     </widget>
@@ -207,6 +1041,96 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>cargar_informacion_administrativos</tabstop>
+  <tabstop>tabla_administrativos</tabstop>
+  <tabstop>input_adm_id</tabstop>
+  <tabstop>input_nombre_adm</tabstop>
+  <tabstop>input_adm_apellidos</tabstop>
+  <tabstop>input_adm_cargo</tabstop>
+  <tabstop>input_adm_dni</tabstop>
+  <tabstop>input_adm_fecha_nac</tabstop>
+  <tabstop>input_adm_direccion</tabstop>
+  <tabstop>input_adm_telf</tabstop>
+  <tabstop>input_adm_email</tabstop>
+  <tabstop>agregar_adm</tabstop>
+  <tabstop>cargar_informacion_profesores</tabstop>
+  <tabstop>tabla_profesores</tabstop>
+  <tabstop>input_prof_id</tabstop>
+  <tabstop>input_prof_nombre</tabstop>
+  <tabstop>input_prof_apellidos</tabstop>
+  <tabstop>input_prof_escuela</tabstop>
+  <tabstop>input_prof_profes</tabstop>
+  <tabstop>input_prof_grado_p</tabstop>
+  <tabstop>input_prof_dni</tabstop>
+  <tabstop>input_prof_fecha</tabstop>
+  <tabstop>input_prof_email</tabstop>
+  <tabstop>input_prof_telf</tabstop>
+  <tabstop>input_prof_direccion</tabstop>
+  <tabstop>agregar_profesor</tabstop>
+  <tabstop>cargar_informacion_alumnos</tabstop>
+  <tabstop>tabla_alumnos</tabstop>
+  <tabstop>input_alumno_id</tabstop>
+  <tabstop>input_alumno_nombre</tabstop>
+  <tabstop>input_alumno_apellidos</tabstop>
+  <tabstop>input_alumno_escuela</tabstop>
+  <tabstop>input_alumno_dni</tabstop>
+  <tabstop>input_alumno_fecha_nac</tabstop>
+  <tabstop>input_alumno_direccion</tabstop>
+  <tabstop>input_alumno_telf</tabstop>
+  <tabstop>input_alumno_email</tabstop>
+  <tabstop>boton_agregar_alumno</tabstop>
+ </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>input_adm_email</sender>
+   <signal>returnPressed()</signal>
+   <receiver>agregar_adm</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1081</x>
+     <y>532</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1079</x>
+     <y>581</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_alumno_email</sender>
+   <signal>returnPressed()</signal>
+   <receiver>boton_agregar_alumno</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1096</x>
+     <y>535</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1096</x>
+     <y>590</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>input_prof_direccion</sender>
+   <signal>returnPressed()</signal>
+   <receiver>agregar_profesor</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1003</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1175</x>
+     <y>549</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

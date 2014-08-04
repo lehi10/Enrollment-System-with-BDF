@@ -8,7 +8,8 @@ data_base::data_base()
         profesores.open("../DB/profesores.dbf",true);
         directores.open("../DB/directores.dbf",true);
         matriculas.open("../DB/matriculas.dbf",true);
-        notas.open("../DB/notas.dbf");
+        notas.open("../DB/notas.dbf",true);
+        administrativos.open("../DB/administrativos.dbf",true);
     }
     catch(...)
     {

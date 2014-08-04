@@ -24,6 +24,12 @@ private slots:
 
     void on_cargar_informacion_administrativos_clicked();
 
+    void on_agregar_adm_clicked();
+
+    void on_agregar_profesor_clicked();
+
+    void on_boton_agregar_alumno_clicked();
+
 private:
     Ui::director_window *ui;
     data_base *DB_DIR;

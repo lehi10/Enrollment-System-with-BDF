@@ -28,15 +28,11 @@ void MainWindow::on_pushButton_login_clicked()
 
     vector<string>* row=readTest.select_all_of(0,id);
     readTest.close();
-    for_each(row->begin(),row->end(),[](string dato)
-    {
-       cout<<dato<<endl;
-    });
+
     if((*row)[0]!= "")
     {
         if(pass==(*row)[1])
         {
-            cout<<"succes"<<endl;
             if((*row)[2]=="adm")
             {
                 adm_window *adm=new adm_window(this);
@@ -58,9 +54,7 @@ void MainWindow::on_pushButton_login_clicked()
             messageBox.warning(0,"Error","Contraseña Incorrecta !");
             messageBox.setFixedSize(500,200);
             return;
-
         }
-
     }
     else
     {
@@ -69,7 +63,6 @@ void MainWindow::on_pushButton_login_clicked()
         messageBox.setFixedSize(500,200);
 
     }
-
 }
 
 

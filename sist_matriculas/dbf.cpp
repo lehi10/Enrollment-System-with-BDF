@@ -650,7 +650,122 @@ int DBF::markAsDeleted(int nRecord)
     return 0;
 }
 
+vector<vector<string>*>* DBF::matriz_select_all_of(int field, string value)
+{
+    vector<vector<string> *> *matriz=new vector<vector<string>*>;
+    for( int r = 0; r < m_FileHeader.uRecordsInFile ; r++ )
+    {
+        vector<string> *temp=new vector<string>(m_nNumFields);
+        int cont=0;
+        bool flag=false;
+        loadRec(r);
+        for( int f=0; f < m_nNumFields ; f++ )
+        {
+            string s = readField(f);
 
+            for( int i = s.length()-1 ; i > 0 ; i-- )
+            {
+                if( s[i] == ' ' )
+                    s.erase(i,1);
+                else
+                    break; // done
+            }
+            for( int i = 0 ; i < s.length() ; i++ )
+            {
+                if( s[i] == ' ' )
+                {
+                    s.erase(i,1);
+                    i--;
+                }
+                else
+                    break; // done
+            }
+            int nFind = s.find(",");
+            if( nFind > -1 )
+            {
+                nFind = s.find("\"");
+                while( nFind > -1 )
+                {
+                    s[nFind] = '\'';
+                    nFind = s.find("\"");
+                }
+            }
+            else
+            {
+                (*temp)[cont]=s;
+                if(field==f && value==s )
+                    flag=true;
+                cont++;
+            }
+        }
+        if(flag==true)
+        {
+            matriz->push_back(temp);
+        }
+    }
+    return matriz;
+}
+
+
+vector<string>* DBF::select_all_of(int field, string value)
+{
+    for( int r = 0; r < m_FileHeader.uRecordsInFile ; r++ )
+    {
+        vector<string> *temp=new vector<string>(m_nNumFields);
+        int cont=0;
+        bool flag=false;
+        loadRec(r);
+        for( int f=0; f < m_nNumFields ; f++ )
+        {
+            string s = readField(f);
+
+            for( int i = s.length()-1 ; i > 0 ; i-- )
+            {
+                if( s[i] == ' ' )
+                    s.erase(i,1);
+                else
+                    break; // done
+            }
+            for( int i = 0 ; i < s.length() ; i++ )
+            {
+                if( s[i] == ' ' )
+                {
+                    s.erase(i,1);
+                    i--;
+                }
+                else
+                    break; // done
+            }
+            int nFind = s.find(",");
+            if( nFind > -1 )
+            {
+                nFind = s.find("\"");
+                while( nFind > -1 )
+                {
+                    s[nFind] = '\'';
+                    nFind = s.find("\"");
+                }
+            }
+            else
+            {
+                (*temp)[cont]=s;
+                if(field==f && value==s )
+                    flag=true;
+                cont++;
+            }
+        }
+        if(flag==true)
+        {
+            return temp;
+        }
+    }
+    string error="No Se Encontro EL Registro";
+    throw error;
+    return 0;
+}
+
+
+/*
 vector<string>* DBF::select_all_of(int field, string value)
 {
 
@@ -708,7 +823,7 @@ vector<string>* DBF::select_all_of(int field, string value)
     return row;
 }
 
-
+*/
 
 
 vector<vector<string>*>* DBF::get_matriz()

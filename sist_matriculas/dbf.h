@@ -72,6 +72,7 @@ public:
     void dumpAsCSV(); // output fields and records as csv to std output
     vector<vector<string>*>* get_matriz();
     vector<string>* select_all_of(int field, string value);
+    vector<vector<string>*>* matriz_select_all_of(int field, string value);
 
     int GetNumRecords()
     {
